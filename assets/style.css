@@ -1,0 +1,177 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html,
+body,
+[class*="css"]{
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===========================
+   Background
+=========================== */
+
+.stApp{
+    background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
+    color:white;
+}
+
+/* ===========================
+   Hide Streamlit Menu
+=========================== */
+
+#MainMenu,
+footer,
+header{
+    visibility:hidden;
+}
+
+/* ===========================
+   SIDEBAR FIX
+=========================== */
+
+section[data-testid="stSidebar"]{
+    background:#111827 !important;
+    min-width:300px !important;
+    max-width:300px !important;
+    width:300px !important;
+    border-right:1px solid rgba(255,255,255,.08);
+}
+
+section[data-testid="stSidebar"] > div{
+    width:300px !important;
+}
+
+[data-testid="collapsedControl"]{
+    display:block !important;
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero{
+    padding:35px;
+    border-radius:20px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(16px);
+    border:1px solid rgba(255,255,255,.15);
+    margin-bottom:30px;
+}
+
+.hero-title{
+    font-size:48px;
+    font-weight:700;
+    color:white;
+}
+
+.hero-subtitle{
+    color:#cbd5e1;
+    font-size:18px;
+    margin-top:10px;
+}
+
+/* ===========================
+   Cards
+=========================== */
+
+.card,
+.metric-card{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:18px;
+    padding:22px;
+    transition:.3s;
+}
+
+.card:hover,
+.metric-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(59,130,246,.25);
+    border-color:#3b82f6;
+}
+
+/* ===========================
+   Metrics
+=========================== */
+
+.metric{
+    text-align:center;
+    font-size:34px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+.metric-title{
+    text-align:center;
+    color:#94a3b8;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.stButton>button{
+    width:100%;
+    border-radius:12px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px;
+    font-weight:600;
+}
+
+.stButton>button:hover{
+    background:#1d4ed8;
+}
+
+/* ===========================
+   File Upload
+=========================== */
+
+[data-testid="stFileUploader"]{
+    border:2px dashed #3b82f6;
+    border-radius:15px;
+    padding:15px;
+}
+
+/* ===========================
+   Images
+=========================== */
+
+.stImage img{
+    border-radius:15px;
+}
+
+/* ===========================
+   Success
+=========================== */
+
+.success-box{
+    background:#14532d;
+    color:white;
+    padding:15px;
+    border-radius:15px;
+}
+
+/* ===========================
+   Warning
+=========================== */
+
+.warning-box{
+    background:#78350f;
+    color:white;
+    padding:15px;
+    border-radius:15px;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+.footer{
+    text-align:center;
+    color:#94a3b8;
+    margin-top:40px;
+    font-size:14px;
+}
